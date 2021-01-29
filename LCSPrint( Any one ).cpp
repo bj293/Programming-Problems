@@ -32,10 +32,9 @@ void LCS ( int *x , int  *y , int len_X , int len_Y )
             else
                 lengthMatrix[i][j] = max ( lengthMatrix[i-1][j] , lengthMatrix[i][j-1] );
         }
-    
-    int temp = lengthMatrix[len_X][len_Y] ;
-    int t = 0 ; 
-    while( lengthMatrix[len_X][t] != temp)  t++;  
+		
+		
+		 
     vector<int> subsequence ;
     for ( int i = len_X , j = len_Y ; i > 0 && j > 0  ; )
     {
