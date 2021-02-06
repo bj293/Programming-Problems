@@ -29,7 +29,7 @@ int shortestPath( char grid[N][M] , int srow , int scol)
 		}
 		
 		checkNeighbours(grid ,r,c);
-		cout << " this " << r << " " << c << endl ;
+		
 		nodes_left_in_layer--;
 		if(!nodes_left_in_layer)                      // On completion of layer increase distance by 1
 		{
@@ -84,5 +84,5 @@ int main()
                         { 'd', '*', '*', '*' } }; 
                         
                         
-    cout<< shortestPath(grid , 0 , 3);
+    cout<< "Shortest Path Length - " << shortestPath(grid , 0 , 3);
 }
